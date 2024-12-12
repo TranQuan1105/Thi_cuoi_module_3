@@ -36,7 +36,7 @@
         <td><c:out value="${p.category}"/></td>
         <td>
           <a class="btn btn-warning btn-sm">Edit</a>
-          <a href="product?action=delete-product-form" class="btn btn-danger btn-sm">Delete</a>
+          <a href="product?action=delete-product-form&id=${p.productId}" class="btn btn-danger btn-sm">Delete</a>
         </td>
       </tr>
     </c:forEach>

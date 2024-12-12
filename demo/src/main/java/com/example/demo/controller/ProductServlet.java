@@ -36,8 +36,8 @@ public class ProductServlet extends HttpServlet {
 
     private void deleteProduct(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         int id = Integer.parseInt(req.getParameter("id"));
-        productService.deleteProduct(id); //
-        resp.sendRedirect("product"); //
+        productService.deleteProduct(id);
+        resp.sendRedirect("product");
     }
 
     private void addProduct(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
